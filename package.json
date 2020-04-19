@@ -1,0 +1,14 @@
+{
+  "name": "elegentone",
+  "version": "1.0.0",
+  "description": "shopping website",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass": "node-sass  sass/main.scss  css/nav.css -w"
+  },
+  "author": "Ananya Mahato",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,21 @@
+.navbar .nav-item a
+{
+    margin-right: 15px;
+font-size: 15px;
+font-weight: 700;
+font-family: Lato;
+background-color:rgba(255, 255, 255,.5);
+ border: 2px solid $color-dark-blue;
+  border-radius: 70px;
+  &:hover{
+    background-color: $color-dark-blue;
+
+  }
+}
+
+
+
+.navbar
+{
+    background-color: rgba(255, 255, 255,0.6);
+}

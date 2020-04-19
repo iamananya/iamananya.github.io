@@ -1,0 +1,133 @@
+.soon
+{
+    padding-top: 0;
+    padding-bottom: 90px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    //position: relative;
+    //background-image: url(../shopics/gift2.jpg);
+
+    overflow: hidden;
+   // background:linear-gradient(to bottom right,rgba(255, 209, 217, 0.698),rgba(120, 238, 222, 0.385));
+}
+
+
+
+
+
+.came
+{
+
+    margin-top: auto;
+    padding-bottom: 30px;
+}
+
+
+  .card
+    {
+       
+        position: relative;
+        margin: 20px;
+        height: 320px;
+        width: 320px;
+        overflow: hidden;
+        box-shadow: 10px 10px 40px 0 rgba(0,0,0,0.4);
+
+         
+
+             
+              
+                
+
+            &:hover .more
+            {
+               height: 50%;
+               border-top-left-radius: 0;
+               border-bottom-right-radius: 0;
+
+              & a
+              {
+                  opacity: 0;
+
+              }  
+
+            }
+    }
+
+
+
+
+.header
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 0.4s;
+        }
+
+.header img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.card:hover .header{
+    height: 50%;
+
+}
+
+.more
+{
+ position: absolute;
+                height: 15%;
+                width: 100%;
+                background:rgb(134, 216, 209);
+                bottom: 0;
+                left: 0;
+                border-top-right-radius: 50%;
+                border-top-left-radius: 50%;
+                transition: 0.4s;
+
+}
+
+ .more a
+                {
+                    color: black;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    letter-spacing: 2px;
+                    transform: translate(-50%,-50%);
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                }
+.bdy
+            {
+                position: absolute;
+                padding: 20px;
+                width: 100%;
+                height: 50%;
+                bottom: 0;
+                z-index:1 ;
+                opacity: 0;
+                transition: 0.1s;
+
+                & p {
+                    font-size: 20px;
+                    line-height: 18px;
+                    color: black;
+                    }
+            }
+
+ .card:hover .bdy{
+                    opacity: 1;
+                }
+               

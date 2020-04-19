@@ -1,0 +1,130 @@
+
+
+.pick{
+position: relative;
+
+   padding-left: 80px;
+    box-sizing: border-box;
+    font-family: lato;
+    //background-image: url(../shopics/gift2.jpg);
+
+}
+
+.rowt
+{
+    padding-bottom: 10px;
+   text-align: center;
+   display: block;
+}
+
+.columnt
+{
+    width: 30%;
+    float: left;
+    padding: 0px 10px;
+    padding-bottom: 40px;
+   text-align: center;
+   
+}
+.rowt::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+   @media screen and(max-width:600px) 
+   {
+       .columnt
+       {
+           width: 10%;
+           display: block;
+           margin-bottom: 20px;
+       }
+   }
+
+
+
+.cardt
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,.2);
+    max-width: 400px;
+    width: auto;
+    margin: auto;
+
+    //background-image:linear-gradient(to bottom right,rgba(255, 209, 217, 0.698),rgba(120, 238, 222, 0.385)),url('../shopics/gift2.jpg');
+    border: 2px solid white;
+
+    text-align: center;
+   
+   
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    & a > i
+    {
+        color: yellow;
+    }
+    
+  
+    & a{
+    text-decoration: none;
+    
+
+}
+
+}
+
+.rowt p{
+    color: rgb(85, 33, 33);
+    font-size: 18px;
+     letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.titlet
+{
+    color:rgb(51, 19, 19);
+    font-size: 18px;
+
+}
+.cardt button{
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color:black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: url(../shopics/images.jpeg);
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+
+   
+
+}
+ .icn p button:hover,
+ .icn p a:hover
+    {
+    opacity: 0.6;
+   
+    
+
+    }
+
+.imgt
+{
+    overflow: hidden;
+}
+
+
+ .imgt img{
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+ .imgt:hover img{
+    transform: scale(1.5);
+}
+

@@ -1,0 +1,70 @@
+.stylenav a > i{
+    padding-right: 30px;
+    color:$color-logo-blue;
+}
+span.a
+{
+font-family: Qwigley;
+font-size: 70px;
+}
+
+span.e{
+  font-family: Qwigley;
+  font-size: 150px;
+}
+
+span.f
+{
+  font-family: Merienda;
+  font-size: 70px;
+  font-weight: 400;
+  color:$color-one-blue;
+  
+}
+
+
+
+span.b
+{
+font-family: Merienda;
+font-size: 30px;
+font-weight: 400;
+color:$color-one-blue;
+
+}
+span.c
+{
+font-family: Qwigley;
+font-size: 200px;
+animation: text 2s infinite;
+
+  text-shadow: 2px 2px 8px rgb(253, 255, 254);
+
+}
+@keyframes text{
+    0%{color: black;
+    margin-left: 80px;
+    transition: ease-in;
+    }
+
+  
+    
+}
+
+
+span.d
+{
+font-family: Merienda;
+font-size: 80px;
+font-weight: 400;
+color:$color-one-blue;
+animation: text 2s infinite;
+ 
+  text-shadow: 2px 2px 8px #fff;
+}
+
+.anim .e 
+{
+    font-family: merienda;
+    font-size: 30px;
+}

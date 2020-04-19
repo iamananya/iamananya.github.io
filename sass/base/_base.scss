@@ -1,0 +1,57 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body   
+{
+ background-image:linear-gradient(to bottom right,rgba(255, 209, 217, 0.698),rgba(120, 238, 222, 0.385)),url('../shopics/gift2.jpg');
+
+  background-position: center;
+height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.tie h1{
+    padding: auto;
+    //font-family: Qwigley;
+    font-size: 300px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+//animation: text 3s 1;
+//transform: translate(-50%,-50%);
+
+
+/*@media al
+  h1{
+    font-size:100px ;
+    top: 150px;
+right: 200px;
+  }
+}
+
+@media all and (min-width:700px) and (min-width:900px)
+{
+  
+  h1{
+    font-size:200px ;
+    top: 250px;
+right: 400px;
+  }
+}
+
+*/

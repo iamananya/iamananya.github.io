@@ -1,0 +1,58 @@
+.writeup
+{
+    
+    text-align: center;
+    //padding-top: 200px;
+    // background-image:linear-gradient(to bottom right,rgba(255, 209, 217, 0.698),rgba(120, 238, 222, 0.385)),url(./shopics/gift2.jpg);
+font-family: lato;
+background-position: center;
+
+}
+
+.contact-form
+{
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+    font-weight: 500;
+    
+}
+
+.contact-form .form-control
+{
+    
+    width: 600px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(117, 104, 104);
+    color:black;
+    font-size: 20px;
+    
+    margin-bottom: 16px;
+}
+input{
+    height: 45px;
+}
+.contact-form .submit{
+background: $color-one-blue;
+border-color: transparent;
+color:#fff;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+height:50px ;
+margin-top: 20px;
+
+
+}
+form .submit:hover{
+    background-color:$color-dark-blue ;
+}
