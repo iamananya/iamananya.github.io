@@ -350,6 +350,7 @@ span.d {
 .row {
   width: 100%;
   max-width: 1700px;
+  padding-left: 70px;
   margin: 2em auto; }
 
 .row::after {
@@ -466,10 +467,11 @@ input[id^='modal']:checked + .modal-wrapper > .modal-box {
 
 .columnt {
   width: 30%;
-  float: left;
   padding: 0px 10px;
   padding-bottom: 40px;
-  text-align: center; }
+  padding-left: 30px;
+  text-align: center;
+  display: inline-block; }
 
 .rowt::after {
   content: "";
