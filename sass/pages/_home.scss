@@ -8,3 +8,11 @@
   text-align: center; 
 }
 
+@media screen and(max-width:800px) 
+{
+  .Intro p 
+  {
+    font-size: 7px;
+    font-weight: 500;
+  }
+}

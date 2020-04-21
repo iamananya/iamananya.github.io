@@ -36,7 +36,9 @@ span.c
 {
 font-family: Qwigley;
 font-size: 200px;
+
 animation: text 2s infinite;
+
 
   text-shadow: 2px 2px 8px rgb(253, 255, 254);
 
@@ -58,7 +60,10 @@ font-family: Merienda;
 font-size: 80px;
 font-weight: 400;
 color:$color-one-blue;
+position: relative;
+
 animation: text 2s infinite;
+
  
   text-shadow: 2px 2px 8px #fff;
 }
@@ -68,3 +73,81 @@ animation: text 2s infinite;
     font-family: merienda;
     font-size: 30px;
 }
+@media screen and(max-width:1140px) 
+{
+  span.c
+  {
+    font-size: 150px;
+    
+  }
+
+  span.d
+  {
+    font-size: 60px;
+  }
+}
+@media screen and(max-width:800px) 
+{
+  span.c
+  {
+    font-size: 120px;
+    
+  }
+
+  span.d
+  {
+    font-size: 50px;
+  }
+}
+@media screen and(max-width:660px) 
+{
+  span.c
+  {
+    font-size: 90px;
+    
+  }
+
+  span.d
+  {
+    font-size: 40px;
+  }
+}
+
+
+
+
+@media screen and (max-width:1140px)
+{
+    span.e 
+    {
+      font-size: 130px;
+    }
+    span.f{
+      font-size: 60px;
+    }
+}
+
+
+@media screen and (max-width:880px)
+{
+    span.e 
+    {
+      font-size: 90px;
+    }
+    span.f{
+      font-size: 50px;
+    }
+}
+
+@media screen and (max-width:660px)
+{
+    span.e 
+    {
+      font-size: 70px;
+    }
+    span.f{
+      font-size: 40px;
+    }
+}
+
+

@@ -32,16 +32,28 @@ background: transparent;
     margin:0 0 20% 43%;
     border: 2px solid #fff;
     border-radius: 50%;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 .img-rev img{
     width: 100%;
     
 }
+@media screen and(max-width:1000px) 
+{
+    .img-rev {
+     margin:5% 0 30% 43%;    
+width: 130px;
+    height: auto;
+    }
+
+
+}
+
+
 .carousel-caption
 {
-    position:static;
+    position:relative;
     padding-bottom: 15px;
     padding-top: 0;
 
@@ -52,9 +64,23 @@ background: transparent;
     font-family: lato;
     font-size: 30px;
     margin-bottom: 15px;
-    margin-top: 25px;
+    //padding-top: 65px;
     font-weight: bold;
     color:rgb(27, 9, 9);
+}
+
+
+@media screen and(max-width:1000px) 
+{
+    .carousel-caption h5 {
+         margin-bottom: 15px;
+   // margin-top: 60px;
+        font-size: 25px;
+        
+
+    }
+
+
 }
 .carousel-caption p
 {
@@ -63,6 +89,26 @@ background: transparent;
     margin: auto;
     width: 70%;
     margin-bottom: 30px;
+}
+@media screen and(max-width:1000px) 
+{
+    .carousel-caption p {
+        font-size: 20px;
+
+
+    }
+
+
+}
+@media screen and(max-width:760px) 
+{
+    .carousel-caption p {
+        font-size: 15px;
+        
+
+    }
+
+
 }
 
 .carousel-indicators

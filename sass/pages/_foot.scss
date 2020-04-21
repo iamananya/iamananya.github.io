@@ -78,9 +78,24 @@ position: relative;
       
     }
 }
+@media(max-width: 900px)
+{
+ 
+    .footer .inner-footer
+    {
+        width: 90%;
+    }
+    .inner-footer .logo-container,
+    .inner-footer .footer-third
+    {
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+}
 
 
-@media(max-width: 390px)
+@media(max-width: 450px)
 {
  
     .footer .inner-footer
