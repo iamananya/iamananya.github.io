@@ -2,6 +2,18 @@
     padding-right: 30px;
     color:$color-logo-blue;
 }
+@media screen and(max-width:550px) 
+{
+  .stylenav a > i
+  {
+    font-size: 20px;
+  }
+
+}
+
+
+
+
 span.a
 {
 font-family: Qwigley;
@@ -32,6 +44,21 @@ font-weight: 400;
 color:$color-one-blue;
 
 }
+
+
+@media screen and(max-width:500px) 
+{
+  span.a 
+  {
+    font-size: 40px;
+  }
+  span.b{
+    font-size: 20px;
+  }
+}
+
+
+
 span.c
 {
 font-family: Qwigley;

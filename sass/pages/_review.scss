@@ -27,8 +27,10 @@ form{
 
 .contact-form .form-control
 {
-    
-    width: 600px;
+    width:70vw;
+
+    //width: calc(80vw-10px);
+    //margin: 0 auto;
     background:transparent;
     border: none;
     outline: none;
@@ -50,9 +52,26 @@ font-weight: bold;
 letter-spacing: 2px;
 height:50px ;
 margin-top: 20px;
+text-align: center;
+//width: calc(80vh-20px);
+ //margin: 0 auto;
+   // max-width: 90%;
 
 
 }
 form .submit:hover{
     background-color:$color-dark-blue ;
+}
+@media screen and(max-width:840px)
+{
+    .contact-form .form-control
+    {
+        width:80vw;
+    
+    }
+    .contact-form .submit{
+        width: calc(90vw - 10px);
+        margin: 0 auto;
+    }
+
 }

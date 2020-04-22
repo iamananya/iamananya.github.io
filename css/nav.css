@@ -20,7 +20,8 @@ body {
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  overflow: hidden; }
 
 @media screen and (max-width: 1180px) {
   .tie h1 {
@@ -56,6 +57,20 @@ body {
     top: 15%;
     left: 20%;
     transform: translate(-10%, -30%); } }
+
+@media screen and (max-width: 550px) {
+  .tie h1 {
+    font-size: 200px;
+    top: 10%;
+    left: 20%;
+    transform: translate(-9%, -30%); } }
+
+@media screen and (max-width: 450px) {
+  .tie h1 {
+    font-size: 200px;
+    top: 5%;
+    left: 20%;
+    transform: translate(-6%, -30%); } }
 
 .anim {
   text-align: center;
@@ -136,11 +151,12 @@ body {
   top: 300px;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%; }
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
 
 .loader {
-  position: absolute;
+  position: relative;
   display: flex;
   padding: 100px;
   align-items: center;
@@ -169,9 +185,20 @@ body {
   100% {
     transform: scale(1); } }
 
+@media screen and (max-width: 660px) {
+  .partcle {
+    size: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; } }
+
 .stylenav a > i {
   padding-right: 30px;
   color: #37a8a3; }
+
+@media screen and (max-width: 550px) {
+  .stylenav a > i {
+    font-size: 20px; } }
 
 span.a {
   font-family: Qwigley;
@@ -192,6 +219,12 @@ span.b {
   font-size: 30px;
   font-weight: 400;
   color: #54c3be; }
+
+@media screen and (max-width: 500px) {
+  span.a {
+    font-size: 40px; }
+  span.b {
+    font-size: 20px; } }
 
 span.c {
   font-family: Qwigley;
@@ -311,28 +344,27 @@ span.d {
     font-weight: 500; } }
 
 .soon {
-  padding-top: 0;
-  padding-bottom: 90px;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: lato;
-  min-width: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; }
+  width: 100%;
+  padding-left: 10px; }
+
+.soon::after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .came {
-  margin-top: auto;
-  padding-bottom: 30px; }
+  margin-top: auto; }
 
 .card {
   position: relative;
-  margin: 0 auto;
   height: 320px;
-  width: 320px;
-  overflow: hidden;
-  box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.4); }
+  box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: calc(100vw - 40px);
+  margin: 30px auto;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden; }
   .card:hover .more {
     height: 50%;
     border-top-left-radius: 0;
@@ -344,9 +376,8 @@ span.d {
   height: 100%;
   transition: 0.4s;
   max-width: 400px;
-  width: calc(80vw - 40px);
-  margin: 0 auto;
-  text-align: center;
+  width: calc(100vw - 40px);
+  padding: 0 auto;
   display: inline-block;
   overflow: hidden;
   height: 100%; }
@@ -356,8 +387,7 @@ span.d {
     height: 100%;
     width: 100%;
     display: block;
-    margin-bottom: 20px;
-    margin: 0 auto; } }
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 800px) {
   .header {
@@ -365,7 +395,8 @@ span.d {
     width: 100%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+    width: calc(80vw - 20px); } }
 
 .header img {
   height: 100%;
@@ -429,6 +460,13 @@ span.d {
 
 .card:hover .bdy {
   opacity: 1; }
+
+.loader {
+  position: relative; }
+
+@media screen and (max-width: 800px) {
+  .loader {
+    font-size: 10px; } }
 
 .heads {
   padding-left: 30%; }
@@ -590,7 +628,7 @@ input[id^='modal']:checked + .modal-wrapper > .modal-box {
 
 @media screen and (max-width: 400px) {
   .columnt {
-    width: 10%;
+    width: 100%;
     display: block;
     margin-bottom: 20px; } }
 
@@ -662,7 +700,7 @@ form {
   font-weight: 500; }
 
 .contact-form .form-control {
-  width: 600px;
+  width: 70vw;
   background: transparent;
   border: none;
   outline: none;
@@ -682,10 +720,18 @@ input {
   font-weight: bold;
   letter-spacing: 2px;
   height: 50px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: center; }
 
 form .submit:hover {
   background-color: #269b95; }
+
+@media screen and (max-width: 840px) {
+  .contact-form .form-control {
+    width: 80vw; }
+  .contact-form .submit {
+    width: calc(90vw - 10px);
+    margin: 0 auto; } }
 
 .headpick {
   position: relative;
@@ -709,6 +755,7 @@ form .submit:hover {
 .img-rev {
   width: 150px;
   height: 150px;
+  display: inline-block;
   margin: 0 0 20% 43%;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -719,8 +766,26 @@ form .submit:hover {
 
 @media screen and (max-width: 1000px) {
   .img-rev {
-    margin: 5% 0 30% 43%;
+    margin: 5% 0 34% 43%;
     width: 130px;
+    height: auto; } }
+
+@media screen and (max-width: 760px) {
+  .img-rev {
+    margin: 0 0 46% 43%;
+    width: 130px;
+    height: auto; } }
+
+@media screen and (max-width: 550px) {
+  .img-rev {
+    margin: 0 0 50% 39%;
+    width: 120px;
+    height: auto; } }
+
+@media screen and (max-width: 440px) {
+  .img-rev {
+    margin: 0 0 67% 37%;
+    width: 100px;
     height: auto; } }
 
 .carousel-caption {
@@ -740,6 +805,11 @@ form .submit:hover {
     margin-bottom: 15px;
     font-size: 25px; } }
 
+@media screen and (max-width: 550px) {
+  .carousel-caption h5 {
+    margin-bottom: 15px;
+    font-size: 18px; } }
+
 .carousel-caption p {
   font-family: lato;
   font-size: 20px;
@@ -753,13 +823,20 @@ form .submit:hover {
 
 @media screen and (max-width: 760px) {
   .carousel-caption p {
-    font-size: 15px; } }
+    font-size: 15px;
+    max-width: 50%; } }
+
+@media screen and (max-width: 760px) {
+  .carousel-caption p {
+    font-size: 13px;
+    max-width: 50%; } }
 
 .carousel-indicators {
   bottom: -35px; }
 
 .foot {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .footer {
   width: 100vw;

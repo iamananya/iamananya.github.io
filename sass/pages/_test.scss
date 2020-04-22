@@ -28,7 +28,7 @@ background: transparent;
 .img-rev {
     width: 150px;
     height: 150px;
-  
+  display: inline-block;
     margin:0 0 20% 43%;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -42,8 +42,38 @@ background: transparent;
 @media screen and(max-width:1000px) 
 {
     .img-rev {
-     margin:5% 0 30% 43%;    
+     margin:5% 0 34% 43%;    
 width: 130px;
+    height: auto;
+    }
+
+
+}
+@media screen and(max-width:760px) 
+{
+    .img-rev {
+     margin:0 0 46% 43%;    
+width: 130px;
+    height: auto;
+    }
+
+
+}
+@media screen and(max-width:550px) 
+{
+    .img-rev {
+     margin:0 0 50% 39%;    
+width: 120px;
+    height: auto;
+    }
+
+
+}
+@media screen and(max-width:440px) 
+{
+    .img-rev {
+     margin:0 0 67% 37%;    
+width: 100px;
     height: auto;
     }
 
@@ -67,6 +97,7 @@ width: 130px;
     //padding-top: 65px;
     font-weight: bold;
     color:rgb(27, 9, 9);
+
 }
 
 
@@ -82,6 +113,18 @@ width: 130px;
 
 
 }
+@media screen and(max-width:550px) 
+{
+    .carousel-caption h5 {
+         margin-bottom: 15px;
+   // margin-top: 60px;
+        font-size: 18px;
+        
+
+    }
+
+
+}
 .carousel-caption p
 {
     font-family: lato;
@@ -89,6 +132,7 @@ width: 130px;
     margin: auto;
     width: 70%;
     margin-bottom: 30px;
+    
 }
 @media screen and(max-width:1000px) 
 {
@@ -104,12 +148,25 @@ width: 130px;
 {
     .carousel-caption p {
         font-size: 15px;
+        max-width: 50%;
         
 
     }
 
 
 }
+@media screen and(max-width:760px) 
+{
+    .carousel-caption p {
+        font-size: 13px;
+        max-width: 50%;
+        
+
+    }
+
+
+}
+
 
 .carousel-indicators
 {
@@ -118,3 +175,4 @@ width: 130px;
 
 
 }
+
